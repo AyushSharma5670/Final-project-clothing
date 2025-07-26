@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link rel="shortcut icon" href="Vintage Vines.jpg" type="image/x-icon">
+    <style>
+        .con {
+      display: flex;
+      gap: 20px; /* spacing between images */
+      justify-content: center; /* optional: center the images */
+      flex-wrap: wrap; /* wrap if the screen is small */
+      padding: 20px; /* optional: space around the container */
+    }
+
+    .con img {
+      border-radius: 10px; /* optional: make images look nicer */
+    }
+    .con-item {
+  text-align: center;
+}
+.price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+    .cap{
+         display: flex;
+      gap: 20px; /* spacing between images */
+      justify-content: center; /* optional: center the images */
+      flex-wrap: wrap; /* wrap if the screen is small */
+      padding: 20px; /* optional: space around the container */
+    }
+    .cap img{
+           border-radius: 10px; 
+    }
+  .cap-item {
+  text-align: center;
+}
+.price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+    .jacket{
+      display: flex;
+      gap: 20px; /* spacing between images */
+      justify-content: center; /* optional: center the images */
+      flex-wrap: wrap; /* wrap if the screen is small */
+      padding: 20px;   
+    }
+    .jacket img{
+        border-radius: 10px ;
+    
+      }
+   .con-item {
+  text-align: center;
+}
+.price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+      .Hoddies{
+      display: flex;
+      gap: 20px; /* spacing between images */
+      justify-content: center; /* optional: center the images */
+      flex-wrap: wrap; /* wrap if the screen is small */
+      padding: 20px;   
+    }
+    .Hoddies img{
+        border-radius: 10px ;
+    
+    }
+  .con-item {
+  text-align: center;
+}
+.price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.breadcrumb {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 28px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb a {
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #1abc9c;
+  left: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.breadcrumb a:hover::after {
+  transform: scaleX(1);
+}
+
+.breadcrumb a:hover {
+  color: #16a085;
+}
+
+.breadcrumb span {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.Navigation {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* center the nav */
+  gap: 30px;
+}
+
+.Navigation li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.Navigation li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1abc9c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.Navigation li a:hover {
+  color: #1abc9c;
+}
+
+.Navigation li a:hover::after {
+  transform: scaleX(1);
+}
+
+.section{
+font-size: 36px;         /* Bigger font */
+  font-weight: 700;        /* Bold */
+  color: #2c3e50;          /* Dark grey for modern look */
+  margin-top: 40px;        /* Space above */
+  margin-bottom: 20px;     /* Space below */
+  text-align: center;      /* Optional: center the heading */
+  letter-spacing: 1px;     /* Optional: spacing between letters */
+  border-bottom: 2px solid #1abc9c; /* Optional underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+/* Light Mode (Default) */
+body {
+  background-color: #ffffff;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: inherit;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #1abc9c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#toggleMode {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggleMode:hover {
+  background-color: #159e87;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .section-title {
+  border-color: #16a085;
+}
+
+body.dark-mode #toggleMode {
+  background-color: #f39c12;
+  color: #000;
+}
+
+    </style>
+</head>
+<body>
+    <button id="toggleMode">🌙 Dark Mode</button>
+   <h1 class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span>&gt;</span>
+  <span><a href="acces.html">Men</a></span>
+</h1>
+
+    <nav class="Navigation">
+        <ul>
+            <li><a href="#T">Sunglasses</a></li>
+            <li><a href="#J">Caps</a></li>
+            <li><a href="#Ja">Ties</a></li>
+            <li><a href="#H">Wallets</a></li>
+        </ul>
+    </nav>
+    <h3 id="T" class="section">Sunglasses</h3>
+    <div class="con">
+  <div class="con-item">
+    <img src="images/round light blue glass.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹499</p>
+  </div>
+  <div class="con-item">
+    <img src="images/round black glass.jpg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹549</p>
+  </div>
+  <div class="con-item">
+    <img src="images/round brown glass.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹579</p>
+  </div>
+  <div class="con-item">
+    <img src="images/black round glass.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹499</p>
+  </div>
+  <div class="con-item">
+    <img src="images/round grey glass.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹599</p>
+  </div>
+</div>
+
+    <h3 id="J" class="section">Caps</h3>
+    <div class="cap">
+  <div class="cap-item">
+    <img src="images/black cap.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹799</p>
+  </div>
+  <div class="cap-item">
+    <img src="images/blue cap.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹749</p>
+  </div>
+  <div class="cap-item">
+    <img src="images/white cap.jpg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹699</p>
+  </div>
+  <div class="cap-item">
+    <img src="images/light blue cap.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹849</p>
+  </div>
+  <div class="cap-item">
+    <img src="images/dark blue cap.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹799</p>
+  </div>
+</div>
+
+    <h3 id="Ja" class="section">Ties</h3>
+      <div class="jacket">
+  <div class="jacket-item">
+    <img src="images/red tie.jpeg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹999</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/black tie.jpg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹1049</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/dark blue tie.jpeg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹1099</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/light blue tie.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹999</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/blue tie.avif" alt="Tshirts" width="250" height="350">
+    <p class="price">₹1149</p>
+  </div>
+</div>
+
+
+    </div>
+    <h3 id="H" class="section">Wallets</h3>
+       <div class="jacket">
+  <div class="jacket-item">
+    <img src="images/brown wallet.jpg" alt="Tshirts" width="250" height="350">
+    <p class="price">₹899</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/blue wallet.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹849</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/dark blue wallet.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹799</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/light blue wallet.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹949</p>
+  </div>
+  <div class="jacket-item">
+    <img src="images/black wallet.webp" alt="Tshirts" width="250" height="350">
+    <p class="price">₹999</p>
+  </div>
+</div>
+
+
+    <script>
+  const toggleBtn = document.getElementById("toggleMode");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Change button text/icon
+    if (document.body.classList.contains("dark-mode")) {
+      toggleBtn.textContent = "☀️ Light Mode";
+    } else {
+      toggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
+
+</body>
+</html>

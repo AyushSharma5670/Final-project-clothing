@@ -1,0 +1,230 @@
+ /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-image: url('images/background image.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      margin-left: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcc70;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero button {
+      padding: 10px 25px;
+      background-color: #f4d06f;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #333;
+      border-radius: 5px;
+    }
+
+    /* Category Section */
+    section {
+      padding: 80px 30px;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .category {
+      width: 250px;
+      text-align: center;
+      background-color: white;
+      color: #333;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+    }
+
+    .category img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .category a {
+      display: block;
+      margin-top: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      color: indigo;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .category a:hover {
+      color: darkblue;
+    }
+
+    /* Product Grid */
+    
+    .product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 280px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+    /* Newsletter */
+    .newsletter {
+      text-align: center;
+      color: #333;
+    }
+
+    .newsletter input[type=email] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* About & Reviews */
+    .about, .reviews {
+      max-width: 800px;
+      margin: auto;
+      color: #333;
+    }
+
+    .about p, .reviews p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background: #111;
+      color: #aaa;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .social-icons i {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #aaa;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: white;
+    }
